@@ -1,0 +1,56 @@
+html{
+    
+    scroll-behavior: smooth;
+    
+}
+*{
+    box-sizing: border-box;
+}
+#img-size{
+    width: 30px;
+}
+.brand-text{
+    color: #00FFF5;
+    font-weight: bold;
+}
+
+  
+.underline{
+    color: #00FFF5 !important;
+ }
+
+ 
+#navbar-links .underline:hover{
+
+    border-bottom: 1px solid #00FFF5;
+}
+
+/* landing section */
+
+
+
+#landing img {
+    max-height: 100vh;
+}
+.display-5 {
+    font-size: 20px;
+}
+
+/* ABOUT SECTION */
+#about-container{
+    min-height: 100vh;
+    background: url(./images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+/* Project section */
+#project-container{
+    height: 100vh;
+
+}
+
