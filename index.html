@@ -7,10 +7,14 @@
     <title>Jayson Gepayo Portfolio</title>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/fbd72d75d6.js" crossorigin="anonymous"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <!-- CSS Link -->
+  
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -27,16 +31,16 @@
         <ul class="navbar-nav ml-auto" id="navbar-links">
 
           <li class="nav-item">
-            <a class="nav-link underline" href="#about">ABOUT</a>
+            <a class="nav-link underline Header" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link underline" href="#projects">PROJECTS</a>
+            <a class="nav-link underline Header" href="#projects">PROJECTS</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link underline" href="#tools">TOOLS</a>
+            <a class="nav-link underline Header" href="#tools">TOOLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link underline" href="#contact">CONTACT</a>
+            <a class="nav-link underline Header" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -44,8 +48,8 @@
 
     
 <!-- LANDING SECTION -->
-<section id="landing-container">
-  <div class="container-fluid p-0" id="landing">
+<section id="landing-container" class="d-none d-md-flex">
+  <div class="container-fluid p-0 " id="landing">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -78,15 +82,16 @@
     <div class="row my-5 p-1">
       <div class="col-12 col-md-4 my-1 ">
         <div class="d-flex flex-row justify-content-center">
-            <img src="./images/dummy-profile.jpeg" class="img-fluid rounded-circle">
+            <img src="./images/dummy-profile.jpeg" class="img-fluid rounded-circle border border-primary">
+            <!-- <img src="./images//JPG1.jpg" class="img-fluid rounded-circle border border-primary"> -->
         </div>
       </div>
 
     
       <div class="col-12 col-md-8 my-1">
+        <h1 class="display-4 text-center">Full Stack Developer</h1>
         <div class="d-flex flex-column justify-content-start align-items-start">
-          <h1 class="display-4">Full Stack Developer</h1>
-            <div class="col-md-8">
+            <div class="col-12">
               <p class="display-5 text-justify">Hi! Im Jayson Gepayo an Aspiring Web-Developer. currently staying in somehere in the Philippines, im the youngest in the family. my hobbies are reading manga, playing computer games and many more. I enjoying learning in here at Zuitt on how to become a better Web-Developer to help the community better.</p>
             </div>
         </div>
@@ -188,31 +193,44 @@
 
 <!-- PROJECT SECTION -->
 <section id="project-container">
-  <div class="container-fluid pt-5" id="projects">
+  <div class="container-fluid pt-5 px-5" id="projects">
     <h1 class="display-3 Header text-center">Projects</h1>
-      <div class="row mt-5 px-2">
+      <div class="row mt-5 px-2 mx-auto">
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-3 py-5">
           <div class="img-box">
             <img src="./images/project1.jpg" alt="">
           </div>
 
-          <div class="bg-lightgrey p-2">
+          <div class="Header p-2">
             <h3 class="text-center">Ecommerce</h3>
-            <p class="px-2 text-justify">
-              E-Commerce or Electronic Commerce means buying and selling of goods, products, or services over the internet. E-commerce is also known as electronic commerce or internet commerce. These services provided online over the internet network.
-            </p>
           </div>
         </div>
 
-        <div class="col-12 col-md-6">
-          <div class="img-box bg-project1">
+        <div class="col-12 col-lg-3 py-5">
+          <div class="img-box">
+            <img src="./images/project2.jpg" alt="">
           </div>
-          <div class="bg-lightgrey p-2">
-            <h3 class="text-center">Ecommerce</h3>
-            <p class="px-2 text-justify">
-              E-Commerce or Electronic Commerce means buying and selling of goods, products, or services over the internet. E-commerce is also known as electronic commerce or internet commerce. These services provided online over the internet network.
-            </p>
+          <div class="p-2 Header">
+            <h3 class="text-center">IGZI Personal Website</h3>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 py-5">
+          <div class="img-box">
+            <img src="./images/project3.jpg" alt="">
+          </div>
+          <div class="p-2 Header">
+            <h3 class="text-center">Room Reservation System</h3>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 py-5">
+          <div class="img-box">
+            <img src="./images/project4.jpg" alt="">
+          </div>
+          <div class="p-2 Header">
+            <h3 class="text-center">Web Portal System</h3>
           </div>
         </div>
 
@@ -258,7 +276,7 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <h3 class="text-center display-4 mb-4">Message Us</h3>
+        <h3 class="text-center display-4 mb-4">Message me!</h3>
         <form>
           <div class="form-group">
           <input type="text" name="name" id="txt-username" placeholder="Enter Full Name" class="form-control">
@@ -295,8 +313,11 @@
 
 
 <footer class="bg-dark">
-<p class="text-center text-white pt-3">Develop by <span class="Header">gepsjay</span> | &copy; 2021 All Rights Reserved</p>
-<p class="text-center text-white">For Educational Purpose Only</p>
+<div class="col-12 mb-0">
+  <p class="text-center text-white pt-3">Develop by <span class="Header">gepsjay</span> | &copy; 2022 All Rights Reserved</p>
+  <p class="text-center text-white">For Educational Purpose Only</p>
+</div>
+
 </footer>
   
     
