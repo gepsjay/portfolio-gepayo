@@ -26,6 +26,7 @@ html{
 
     border-bottom: 1px solid #00FFF5;
 }
+
 .overlaydiv {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
@@ -36,7 +37,7 @@ html{
 }
 .border-white{
     border-radius: 20px;
-    border-width: 6px !important;
+    border-width: 2px !important;
 }
 
 
